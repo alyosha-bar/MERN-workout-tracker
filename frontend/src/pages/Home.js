@@ -38,7 +38,7 @@ const Home = () => {
         }
 
         fetchWorkouts()
-    }, [])
+    }, [exercises])
 
     return (
         <div className="home">

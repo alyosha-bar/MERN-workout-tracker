@@ -8,7 +8,7 @@ const AddWorkout = () => {
     const [ reps, setReps ] = useState()
     const [ description, setDescription ] = useState()
     const [ personal_best, setPersonalBest ] = useState()
-    const [ muscles, setMuscles ] = useState()
+    // const [ muscles, setMuscles ] = useState()
 
     const navigate = useNavigate()
     
@@ -33,7 +33,7 @@ const AddWorkout = () => {
             setReps('')
             setDescription('')
             setPersonalBest('')
-            setMuscles('')
+            // setMuscles('')
             navigate('/')
         })
     }
@@ -80,13 +80,15 @@ const AddWorkout = () => {
                 />
                 </div>
 
-                <div className="form-group">
+                <div className="description-group">
                     <label htmlFor="description-input"> Description: </label>
                     <textarea name="description-input"
+                        // cols="40"
+                        // rows="4"
                         required
                         value = { description }
                         onChange={ (e) => setDescription(e.target.value) }
-                        className="input-field"
+                        className="description-input"
                         > 
                         </textarea>
                 </div>
