@@ -20,7 +20,6 @@ const Home = () => {
         })
     }
 
-
     // possibly refractor to LINK
     const handleClick = (_id) => {
         // open new page
@@ -38,7 +37,7 @@ const Home = () => {
         }
 
         fetchWorkouts()
-    }, [exercises])
+    }, [])
 
     return (
         <div className="home">
