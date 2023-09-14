@@ -21,10 +21,15 @@ const Details = () => {
 
 
     return ( 
-        <div>
-            {exercise && <h1 className="title"> {exercise.title} </h1>}
-            {exercise && <p> {exercise.description} </p> }
-            {exercise && <h4> PB: {exercise.personal_best} </h4> }
+        <div className="exercise-details">
+            <div className="exercise-info">
+                {exercise && <h1 className="title"> {exercise.title} </h1>}
+                {exercise && <p> {exercise.description} </p> }
+            </div>
+            <div className="personal-info">
+                {exercise && <h4> PB: {exercise.personal_best} </h4> }
+                <h4> Muscles Targetted: X, Y, Z</h4>
+            </div>
         </div>
      );
 }
